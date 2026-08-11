@@ -25,31 +25,17 @@
         h1 {
             color: #ff6b6b;
             font-size: 2.5rem;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         p {
             font-size: 1.2rem;
             line-height: 1.6;
         }
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
-        }
-        .time-box {
-            background: #ff6b6b;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 10px;
-            font-weight: bold;
-            min-width: 60px;
-        }
         .wishes-card {
             background: #fff;
             border-left: 5px solid #4facfe;
-            padding: 15px;
-            margin: 20px 0;
+            padding: 20px;
+            margin: 25px 0;
             text-align: left;
             border-radius: 0 15px 15px 0;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -100,19 +86,11 @@
 
     <div class="container">
         <h1>Happy Birthday, Fizah! 🎂</h1>
-        <p>In exactly 2 days, you turn a year older and wiser. Here is a little countdown page built just for you!</p>
         
-        <!-- Countdown Timer -->
-        <div class="countdown">
-            <div class="time-box" id="days">2d</div>
-            <div class="time-box" id="hours">47h</div>
-            <div class="time-box" id="minutes">59m</div>
-        </div>
-
         <!-- Birthday Message Section -->
         <div class="wishes-card">
             <h3>💌 From Me to You:</h3>
-            <p>"Hope this year brings you all the happiness, success, and free cake you can handle! You deserve the absolute best celebration."</p>
+            <p>"Hope your day is full of your favorite things! May your birthday bring you as much happiness as you bring to everyone else. So glad you were born or I wouldn't have a friend like you!"</p>
         </div>
 
         <!-- Interactive Surprise Button -->
@@ -161,17 +139,8 @@
                 }, i * 50);
             }
         }
-
-        // Countdown logic loop
-        let hoursLeft = 47;
-        let minsLeft = 59;
-        setInterval(() => {
-            if(minsLeft > 0) { minsLeft--; } 
-            else { minsLeft = 59; if(hoursLeft > 0) hoursLeft--; }
-            document.getElementById('hours').innerText = hoursLeft + 'h';
-            document.getElementById('minutes').innerText = minsLeft + 'm';
-        }, 60000);
     </script>
 </body>
-      </html>
+</html>
+
       
